@@ -14,8 +14,24 @@
             });
         });
     </script>
-    <!--JQUERY -->
+    <script>
+        $(document).ready(function() {
+      $("#toggle").click(function() {
+        var elem = $("#toggle").text();
+        if (elem == "LEARN MORE") {
+          //Stuff to do when btn is in the read more state
+          $("#toggle").text("LEARN LESS");
+          $("#text").slideDown();
+        } else {
+          //Stuff to do when btn is in the read less state
+          $("#toggle").text("LEARN MORE");
+          $("#text").slideUp();
+        }
+      });
+    });
+    </script>
 
+    <!--JQUERY -->
 
 </head> 
 
@@ -59,11 +75,21 @@
                             Intuitivan je, jednostavan za koriscenje i lici na programe iz Office paketa.
                             Poseduje puno unapred definisanih izvestaja.
                             </p>
-                        </div>      
-                         <span class="image">
+                            <div class="btn-container">
+                                <button id="toggle">LEARN MORE</button>
+                            </div>  
+                            <span id="text">Microsoft Project ukljucuje nesmetan korisnicki interfejs poznat kao Ribbon
+                            Mogucnosti Interoperabiliti Microsoft Projekta su prosirena sa uvođenjem Microsoft Project Server-a i Microsoft Project Veb Access-a.
+                            Project Server smesta podatke u centralnu bazu podataka SQL, omogucavajuci nezavisne projekte za pristup zajednickim resursima.
+                            Web pristup omogucava ovlascenim korisnicima da pristupe bazu podataka Project Server-a preko Interneta i ukljucuje Timesheets, graficki analizu resursa opterecenja i administrativni tools.
+                            </span>
+                        
+                        </div> 
+ 
+                          <span class="image">
                                         <img src="images/img1.jpg" alt="" width="500px" height="500px">
                         </span>
-                        
+
                     </section>
              </div>      
    </div>
