@@ -137,12 +137,13 @@ body, html {
 }
 
 #whole .image{
-    display:block;
+    margin-left: 70px;
     height: auto;
-    max-width: 100%;
+    max-width: 45%;
     flex: 0 0 50%;
-    margin-left: 90px;
-
+    background-image: url(./images/img1.jpg);
+    background-size: cover;
+    border-radius: 15px;
 }
 
 .btn-container{
@@ -166,70 +167,19 @@ button{
   font-family:cursive;
   box-sizing:border-box;
 }
-@media(min-width:1500px) {
-    img {
-    width: 600px;
-    height: 600px;
-    border-radius: 25px;
-  }
-}
 
-@media(min-width:1050px) and (max-width: 1500px) {
-     img {
-    width: 400px;
-    height: 400px;
-    border-radius: 25px;
-  }
-}
-
-
-@media(min-width:600px) and (max-width: 1200px) {
- 
- input#query {
-    width: 200px;  
-}
-  #whole {
-    display: flex; 
-    flex-direction: column!important;
-    flex-flow: row wrap;
-    margin: 0;
- 
-  }
-  #whole>.content {
-    order: 2;
-    align-self: center;
-    width: 100%;
-  }
-
-  #whole>.content> h1{
-   padding: 40px 0px 20px 0px;
-   font-size: 30pt;
-  }
-
-  #whole>.image {
-    order: 1;
-    align-self:center;
-    margin-left: 0px;
-  }
-    img {
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
-  }
-}
-
-@media(max-width:599px) {
+@media(max-width:1200px) {
 
   input#query {
-    width: 20px; 
+    width: 180px; 
       } 
 
   a.sidebar-toogle {
-    width: 20px; 
+    width: 15px; 
       } 
 
   .area {
-    width: 30px; 
+    width: 20px;
       } 
  .main-content {
     padding: 10px 10px 10px 20px;
@@ -237,8 +187,8 @@ button{
 }
 
  .main-content .header {
-    margin-left: 40px;
-    height: 80px;
+    margin-left: 0px;
+    height: 65px;
     padding-top: 40px;
  }
 
@@ -246,7 +196,7 @@ button{
     display: flex; 
     flex-direction: column!important;
     flex-flow: row wrap;
-    padding: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   #whole>.content {
     order: 2;
@@ -256,24 +206,32 @@ button{
   
 #whole .content h1{
     font-size: 15pt;
-    padding: 20px 0px 0px 0px;
-    margin-left: 40px;
+    padding: 0px 0px 10px 0px;
+    margin-left: 0px;
+    line-height: 20%;
  }
 #whole .content p{
-    font-size:11pt;
+    font-size: 9pt;
     padding-right: 5px;
-    margin-left: 40px;
+    margin-left: 0px;
+    line-height: 200%;
 }
 
-  #whole>.image {
+ #whole .image {
+    display:block;
     order: 1;
-    width: 100px;
-    height: 100px;
-    margin-left:40px;
+    flex: 0 0 100%;
+    align-self: center;
+    padding: 0px;
+    margin: 30px 0px 0px 0px; 
   }
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-  }
+
+.image p{ 
+   width: 100vw;
+   height: 30vh;
+   background-size: cover;
 }
+}
+
+
+
