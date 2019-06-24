@@ -11,6 +11,7 @@ body, html {
     overflow: hidden;
     font-family: 'Source Sans Pro', Arial, sans-serif;
 }
+/*---------main menu------------*/
 .container {
     width: 100%;
     height: 100%;
@@ -35,7 +36,6 @@ body, html {
     font: 12px;    
 }
 
-
 .sidebar h3{
     border-bottom: solid 3px #f56a6a;
     display: inline-block;
@@ -58,8 +58,9 @@ body, html {
 .sidebar ul li:hover a{
     color: red;
 }
+/*---------end of main menu------------*/
 
-
+/*---------main part of page------------*/
 .main-content {
     width: 100%;
     height: 100%;
@@ -71,13 +72,14 @@ body, html {
     padding-left : 60px;
  }
 
-
+ /*------oblast sa hamburger menijem----------*/
 .area{
     position: absolute;
     width: 50px:
     left:0;
     top:0;
  }
+ /*------end----------*/
 
 .main-content .header{
     height: 110px;
@@ -131,6 +133,17 @@ body, html {
 #whole .content p{
     color: grey;
 }
+#whole .contentsoc{
+    flex: 0 0 50%;
+    line-height: 200%;
+}
+
+#whole .contentsoc h1{
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 40pt;
+    padding-bottom: 40px;
+ }
 #text {
     color: grey;
     display: none;
@@ -145,7 +158,26 @@ body, html {
     background-size: cover;
     border-radius: 15px;
 }
-
+ /*------postavljanje drugacijih slika na druge strane-----------*/
+#whole .image2{
+    margin-left: 70px;
+    height: auto;
+    max-width: 45%;
+    flex: 0 0 50%;
+    background-image: url(./images/img2.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+#whole .image3{
+    margin-left: 70px;
+    height: auto;
+    max-width: 45%;
+    flex: 0 0 50%;
+    background-image: url(./images/img3.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+ /*------dugme Learn more-----------*/
 .btn-container{
   margin: 0;
   height:44px;
@@ -159,7 +191,7 @@ button{
   -ms-user-select:none;
   cursor:pointer;
   border:#ff606d solid 2px;
-  padding:2px 14px 2px 14px;
+  padding:2px 12px 2px 12px;
   border-radius: 10px;
   font-size:15px;
   background:white;
@@ -168,6 +200,46 @@ button{
   box-sizing:border-box;
 }
 
+/*---------social icons-----------*/
+.fa {
+    padding: 15px ;
+    font-size: 200px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 80%;
+    font-size: 30px;
+    }
+
+.fa:hover {
+    opacity: 0.9;
+    background-color: #ca7d60;
+    text-decoration: none;
+    }
+.fa-instagram {
+    background: #4a5058;
+    color: white;
+    }
+.fa-github {
+    background:#4a5058;
+    color: white;
+    }
+.fa-facebook {
+    background: #4a5058;
+    color: white;
+    }
+.fa-twitter {
+    background: #4a5058;
+    color: white;
+    }                      
+
+
+
+
+
+/*---------responsive design-----------*/
 @media(max-width:1200px) {
 
   input#query {
@@ -181,6 +253,8 @@ button{
   .area {
     width: 20px;
       } 
+ 
+    
  .main-content {
     padding: 10px 10px 10px 20px;
     position: relative;
@@ -216,6 +290,19 @@ button{
     margin-left: 0px;
     line-height: 200%;
 }
+ /*------contentsoc je content na str.Contact-----------*/
+  #whole>.contentsoc {
+    order: 2;
+    align-self: center;
+    width: 100%;
+  }
+  
+#whole .contentsoc h1{
+    font-size: 25pt;
+    padding: 0px 0px 10px 0px;
+    margin-left: 0px;
+    line-height: 20%;
+ }
 
  #whole .image {
     display:block;
@@ -225,13 +312,63 @@ button{
     padding: 0px;
     margin: 30px 0px 0px 0px; 
   }
-
+  /*------postavljanje drugacijih slika na druge strane-----------*/
+ #whole .image2 {
+    display:block;
+    order: 1;
+    flex: 0 0 100%;
+    align-self: center;
+    padding: 0px;
+    margin: 30px 0px 0px 0px; 
+  }
+   #whole .image3 {
+    display:block;
+    order: 1;
+    flex: 0 0 100%;
+    align-self: center;
+    padding: 0px;
+    margin: 30px 0px 0px 0px; 
+  }
 .image p{ 
    width: 100vw;
-   height: 30vh;
+   height: 25vh;
    background-size: cover;
 }
+ /*------postavljanje drugih slika na druge strane-----------*/
+.image2 p{ 
+   width: 100vw;
+   height: 25vh;
+   background-size: cover;
+}
+.image3 p{ 
+   width: 100vw;
+   height: 25vh;
+   background-size: cover;
+}
+
+button{
+    font-size:9px;
+
+}
+#text{
+    font-size:9pt;
+}
+
+.social { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
 }
 
 
+@media(max-width:530px) {
+    .fa {
+    padding: 7px ;
+    width: 40px;
+    height: 40px;
+    }
+    #whole .contentsoc h1{
+    font-size: 15px;
+    }
 
+    }
